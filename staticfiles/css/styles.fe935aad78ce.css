@@ -6,14 +6,14 @@
 
 h1 {
     font-size: 3.5rem;
-    font-family: 'Lato', 'Roboto', Helvetica, Arial, sans-serif;
-    font-weight: 900;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    text-align: center;
 }
 
 h2 {
     font-size: 2.5rem;
-    font-family: 'Lato', 'Roboto', Helvetica, Arial, sans-serif;
-    font-weight: 900;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    text-align: center;
 }
 
 .logo {
@@ -28,8 +28,4 @@ li a {
 
 .right-container {
     padding-top: 5px;
-}
-
-p {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
 }

@@ -1,0 +1,24 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.logo {
+    padding-top: 20px !important;
+    width: 150px !important;
+}
+
+li {
+    list-style-type: square;
+}
