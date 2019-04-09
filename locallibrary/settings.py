@@ -147,4 +147,5 @@ STATIC_URL = '/static/'
 
 # Static file serving.
 # http://whitenoise.evans.io/en/stable/django.html#django-middleware
+# Line below causing 500 error, commented out and works
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
