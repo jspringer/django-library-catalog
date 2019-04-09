@@ -1,7 +1,12 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-<p>Test</p>
+<h1>Welcome</h1>
+<p class="intro-p">The Brooklyn Public Library (BPL) is the public library system of the borough of Brooklyn, in New York City. 
+  It is the fifth largest public library system in the United States. 
+  Like the two other public library systems in New York City, it is an independent nonprofit organization that is funded by the New York City and State governments, the federal government, and private donors. 
+  In Fiscal Year 2009, Brooklyn Public Library had the highest program attendance of any public library system in the United States.
+  The library currently promotes itself as Bklyn Public Library.</p>
 
 <!-- div>
 {% load static %}
@@ -11,14 +16,16 @@
 
 <h2>Stats</h2>
 
-<p>The library has the following record counts:</p>
-<ul>
-<li><strong>Books:</strong> {{ num_books }}</li>
-<li><strong>Copies:</strong> {{ num_instances }}</li>
-<li><strong>Copies available:</strong> {{ num_instances_available }}</li>
-<li><strong>Authors:</strong> {{ num_authors }}</li>
-</ul>
+<div class="stats">
+  <p>The library has the following record counts:</p>
+  <ul>
+  <li><strong>Books:</strong> {{ num_books }}</li>
+  <li><strong>Copies:</strong> {{ num_instances }}</li>
+  <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+  <li><strong>Authors:</strong> {{ num_authors }}</li>
+  </ul>
 
-<p id="indexpgviews">You have visited this page {{ num_visits }} times.</p>
+  <p id="indexpgviews">You have visited this page {{ num_visits }} times.</p>
+</div>
 
 {% endblock %}

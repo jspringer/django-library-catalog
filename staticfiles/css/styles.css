@@ -1,6 +1,17 @@
+.width100 {
+    width: 100% !important;
+}
+
 .sidebar-nav {
     margin-top: 20px;
     padding: 0;
+    list-style: none;
+}
+
+.nav-right {
+    position: absolute;
+    right: 60px;
+    top: 8px;
     list-style: none;
 }
 
@@ -50,4 +61,12 @@ p {
 .sidebar-nav li {
     display: inline-block;
     vertical-align: bottom;
+}
+
+.intro-p {
+    padding: 0 0 0 20px;
+}
+
+.stats {
+    padding: 0 0 0 20px;
 }

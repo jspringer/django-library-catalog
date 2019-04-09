@@ -21,14 +21,14 @@
 <div class="row">
   <div class="col-sm-12">
     {% block sidebar %}
-    <div id="topnavbar">
+    <div id="topnavbar" class="width100">
         <a href="{% url 'index' %}"><img src="{% static "images/bpl_logo_sm.png" %}" alt="Home" class="logo" /></a>
       <ul class="sidebar-nav">
         <li><a href="{% url 'books' %}">All Books</a></li>
         <li><a href="{% url 'authors' %}">All Authors</a></li>
       </ul>
     
-      <ul class="sidebar-nav">
+      <ul class="sidebar-nav nav-right">
       {% if user.is_authenticated %}
         <li>User: {{ user.get_username }}</li>
         <li><a href="{% url 'my-borrowed' %}">My Borrowed</a></li>
