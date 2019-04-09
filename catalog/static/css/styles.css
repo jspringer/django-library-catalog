@@ -64,9 +64,34 @@ p {
 }
 
 .intro-p {
-    padding: 0 0 0 20px;
+    padding: 0 20px 0 20px;
+    width: 1000px;
 }
 
 .stats {
     padding: 0 0 0 20px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .intro-p {
+        width: 800px;
+    }
+} 
+
+@media only screen and (max-width: 820px) {
+    .intro-p {
+        width: 600px;
+    }
+} 
+
+@media only screen and (max-width: 620px) {
+    .intro-p {
+        width: 400px;
+    }
+} 
+
+@media only screen and (max-width: 500px) {
+    .intro-p {
+        width: 350px;
+    }
+} 
