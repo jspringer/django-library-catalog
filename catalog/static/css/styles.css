@@ -77,8 +77,64 @@ p {
     padding: 0 0 0 20px;
 }
 
+strong {
+    font-weight: 900 !important;
+}
+
+/* ****************** Books ****************** */
+
+.book-title {
+
+}
+
+.book-author {
+   padding-left: 15px;
+}
+
+.book-details-main {
+
+}
+
+.book-summary {
+    padding: 0 20px 0 30px;
+    margin-bottom: 30px;
+    width: 1000px;
+}
+
+.book-isbn {
+
+}
+
+.book-lang {
+    
+}
+
+.book-genre {
+    
+}
+
+.book-copies {
+    
+}
+
+.book-copies-title {
+    
+}
+
+.book-imprint {
+
+}
+
+.book-visitlib {
+    
+}
+
+.book-returned {
+    
+}
+
 @media only screen and (max-width: 1000px) {
-    .intro-p {
+    .intro-p, .book-summary {
         width: 800px;
     }
 } 
