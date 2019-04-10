@@ -83,6 +83,10 @@ strong {
 
 /* ****************** Books ****************** */
 
+.book-left {
+    margin-top: 20px;
+}
+
 .book-title {
 
 }

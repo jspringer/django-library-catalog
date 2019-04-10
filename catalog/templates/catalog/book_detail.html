@@ -3,10 +3,10 @@
 {% block content %}
 
 <div class="row">
-  <div class="col-sm-3"> 
+  <div class="col-sm-2 book-left"> 
     <img src="http://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg">
   </div>
-  <div class="col-sm-9">
+  <div class="col-sm-10 book-right">
     <h1 class="book-title">{{ book.title }}</h1>
     <div class="book-details-main">
       <p class="book-author"><a href="{% url 'author-detail' book.author.pk %}">{{ book.author }}</a></p>
