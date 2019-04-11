@@ -1,12 +1,20 @@
 {% extends "base_generic.html" %}
+{% load static %}
 
 {% block content %}
-<h1>Welcome</h1>
-<p class="intro-p">The Brooklyn Public Library (BPL) is the public library system of the borough of Brooklyn, in New York City. 
-  It is the fifth largest public library system in the United States. 
-  Like the two other public library systems in New York City, it is an independent nonprofit organization that is funded by the New York City and State governments, the federal government, and private donors. 
-  In Fiscal Year 2009, Brooklyn Public Library had the highest program attendance of any public library system in the United States.
-  The library currently promotes itself as Bklyn Public Library.</p>
+<div id="fp-main">
+  <div id="fp-logo-div">
+    <img src="{% static "images/bklynpl_outdoors-900x570.jpg" %}" id="fp-logo">
+  </div>
+  <div id="fp-intro">
+    <h1>Welcome</h1>
+    <p class="intro-p">The Brooklyn Public Library (BPL) is the public library system of the borough of Brooklyn, in New York City. 
+      It is the fifth largest public library system in the United States. 
+      Like the two other public library systems in New York City, it is an independent nonprofit organization that is funded by the New York City and State governments, the federal government, and private donors. 
+      In Fiscal Year 2009, Brooklyn Public Library had the highest program attendance of any public library system in the United States.
+      The library currently promotes itself as Bklyn Public Library.</p>
+  </div>
+</div>
 
 <!-- div>
 {% load static %}
