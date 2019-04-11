@@ -2,18 +2,23 @@
 
 ## Overview
 
-This web application creates an online catalog for a small local library, where users can browse available books and manage their accounts.
+Mock online library catalog access platform that allows the end user to see books the library carries and their availability. The end user cannot check out books online. 
+
+A superuser/admin can access the Admin platform to add new authors and books. 
 
 The main features that have currently been implemented are:
 
 * There are models for books, book copies, genre, language and authors.
 * Users can view list and detail information for books and authors.
 * Admin users can create and manage models. The admin has been optimised (the basic registration is present in admin.py, but commented out).
-* Librarians can renew reserved books
+* Librarians can renew reserved books.
+
+## Fixes/Features being worked on: 
+1. Improve the UI for all devices. 
 
 ## Quick Start
 
-Make sure you're in the root directory where requirements.txt is located. 
+Make sure you're in the root directory where requirements.txt is located and set this up within a Python virtual environment. 
    ```
    python3 -m venv anyenvname # any name your want, all lowercase, no spaces or special characters
    source anyenvname/bin/activate

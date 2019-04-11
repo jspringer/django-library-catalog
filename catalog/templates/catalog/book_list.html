@@ -1,21 +1,24 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-    <h1>Books</h1>
+  <h1 class="text-center">Books</h1>
+  
+  <div class="book_list_outer">
+  {% if book_list %}
+    {% for book in book_list %}
+    <div class="book_list_book">
+      <a href="{{ book.get_absolute_url }}" class="book_list_cover">
+        <img src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg" class="book_list_cover_img">
+      </a>
+      <div class="book_list_details">
+        <a href="{{ book.get_absolute_url }}" class="book_list_title">{{ book.title }}</a>
+        <a href="{{ book.author.get_absolute_url }}" class="book_list_author">{{ book.author }}</a>
+      </div>
+    </div>
+    {% endfor %}
 
-    {% if book_list %}
-    <ul>
-
-      {% for book in book_list %}
-      <li>
-        <a href="{{ book.get_absolute_url }}">{{ book.title }}</a> ({{book.author}})
-      </li>
-      {% endfor %}
-
-    </ul>
-
-    {% else %}
-      <p>There are no books in the library.</p>
-    {% endif %}       
+  {% else %}
+    <p>There are no books in the library.</p>
+  {% endif %} 
+  </div>    
 {% endblock %}
-
