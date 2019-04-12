@@ -2,6 +2,10 @@
     width: 100% !important;
 }
 
+.fweight500 {
+    font-weight: 500;
+}
+
 #fp-logo-div {
     float: left;
 }
@@ -119,22 +123,29 @@ dd {
 
 .book-left {
    text-align: center;
-   align-content: center;
 }
 
 .book-right {
     font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 50px;
  }
 
 .book_list_outer {
-    margin-top: 30px;
+    margin: 30px 0 0 0;
+    padding: 0;
+    text-align: center;
+    align-content: center;
+    align-items: center;
 }
 
 .book_list_book {
-    margin: 0 40px 20px 40px;
+    padding: 0 20px 20px 20px;
     display: inline-block;
     align-content: center;
     text-align: center;
+    width: 170px;
+    height: 300px;
+    vertical-align: top;
 }
 
 .book_list_cover {
@@ -142,7 +153,7 @@ dd {
 }
 
 .book_list_cover_img {
-    height: 300px;
+    height: 200px;
 }
 
 .book_list_details {
@@ -152,11 +163,13 @@ dd {
 .book_list_title {
     display: block;
     margin-bottom: 3px;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .book_list_author {
     display: block;
+    font-size: 1.4rem;
+    font-weight: 300;
 }
 
 .book-cover {
@@ -208,12 +221,16 @@ dd {
 
 }
 
-.book-visitlib {
-    
+.book-visitlib, .book-reserved, .book-maintanence {
+     font-weight: 100;
 }
 
 .book-returned {
     
+}
+
+.copies-hr {
+    margin-right: 50px;
 }
 
 .author_detail_book {
@@ -235,15 +252,35 @@ dd {
     padding-left: 20px;
 }
 
+@media only screen and (max-width: 767px) {
+    .book-left { 
+        padding-right: 50px;
+    }
+
+    .copies-hr {
+        margin-right: 40px;
+    }
+
+    .book_list_book {
+        margin-left: 0;
+    }
+
+    .book_list_outer {
+        margin-left: -30px;
+        padding-left: 0;
+    }
+} 
+
+
 
 @media only screen and (max-width: 1200px) {
-    .intro-p, .book-summary {
+    .intro-p {
         width: 1000px;
     }
 } 
 
 @media only screen and (max-width: 1000px) {
-    .intro-p, .book-summary {
+    .intro-p {
         width: 750px;
     }
 } 

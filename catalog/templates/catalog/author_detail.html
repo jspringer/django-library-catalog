@@ -18,11 +18,7 @@
   <div class="author_detail_book-right">
     <dl>
       <dt><a href="{% url 'book-detail' book.pk %}">{{book}}</a> </dt>
-      {% if book.bookinstance_set.all.count < 1 %}
-        <dd><strong class="text-danger">Checked Out</strong></dd>
-      {% else %}
-        <dd><strong class="text-success">Available</strong>: {{book.bookinstance_set.all.count}}</dd>
-      {% endif %}
+      <dd><span class="fweight500">Copies</span>: {{book.bookinstance_set.all.count}}</dd>
       <dd>{{book.summary}}</dd>
     </dl>
   </div>
