@@ -26,7 +26,7 @@
             <p class="book-imprint"><strong>Imprint:</strong> {{copy.imprint}}</p>
             <p class="{% if copy.status == 'a' %}text-success{% elif copy.status == 'd' %}text-danger{% else %}text-warning{% endif %}">{{ copy.get_status_display }}</p>
             {% if copy.status == 'a' %}
-              <p class="book-visitlib">Please visit the library to check out this book or call to reserve (copy id: {{copy.truncId}}).</p>
+              <p class="book-visitlib">Please visit the library to check out this book or call to reserve (ref id: {{ copy.truncId }}).</p>
             {% elif copy.status == 'o' %}
               <p class="book-returned"><strong>Due to be returned:</strong> {{copy.due_back}}</p>
             {% elif copy.status == 'r' %}
