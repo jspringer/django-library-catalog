@@ -59,7 +59,7 @@ class Book(models.Model):
 
 import uuid  # Required for unique book instances
 from datetime import date
-
+from django.utils.text import Truncator
 from django.contrib.auth.models import User  # Required to assign User as a borrower
 
 
@@ -67,6 +67,7 @@ class BookInstance(models.Model):
     """Model representing a specific copy of a book (i.e. that can be borrowed from the library)."""
     id = models.UUIDField(primary_key=True, default=uuid.uuid4,
                           help_text="Unique ID for this particular book across whole library")
+    truncId = Truncator(id).chars(12)
     book = models.ForeignKey('Book', on_delete=models.SET_NULL, null=True)
     imprint = models.CharField(max_length=200)
     due_back = models.DateField(null=True, blank=True)
