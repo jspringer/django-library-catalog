@@ -132,14 +132,14 @@ dd {
 
 .book_list_outer {
     margin: 30px 0 0 0;
-    padding: 0;
+    padding: 0 0 0 0;
     text-align: center;
     align-content: center;
     align-items: center;
 }
 
 .book_list_book {
-    padding: 0 20px 20px 20px;
+    margin: 0 20px 20px 20px;
     display: inline-block;
     align-content: center;
     text-align: center;
@@ -158,12 +158,14 @@ dd {
 
 .book_list_details {
     margin-top: 10px;
+    vertical-align: bottom;
 }
 
 .book_list_title {
     display: block;
     margin-bottom: 3px;
     font-size: 1.7rem;
+    font-family: Helvetica, Arial, "Helvetica Neue", sans-serif
 }
 
 .book_list_author {
@@ -171,6 +173,51 @@ dd {
     font-size: 1.4rem;
     font-weight: 300;
 }
+
+.author_list_outer {
+    margin: 30px 0 0 0;
+    padding: 0 0 0 0;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.author_list_author {
+    margin: 0 20px 20px 20px;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    width: 170px;
+    height: 300px;
+    vertical-align: top;
+}
+
+.author_list_image {
+    display: block;
+    height: 200px;
+}
+
+.author_list_image_img {
+    height: 200px;
+}
+
+.author_list_details {
+    margin-top: 10px;
+}
+
+.author_list_name {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 1.7rem;
+    font-family: Helvetica, Arial, "Helvetica Neue". sans-serif
+}
+
+.author_list_life {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
 
 .book-cover {
     padding-top: 25px;
@@ -210,7 +257,7 @@ dd {
 }
 
 .book-copies {
-    padding-left: 15px;
+    padding: 0 15px 0 15px;
 }
 
 .book-copies-title {
@@ -250,6 +297,13 @@ dd {
 
 .author-life {
     padding-left: 20px;
+    font-weight: 500;
+}
+
+.author-summary {
+    padding: 0 5e0px 0 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
 }
 
 @media only screen and (max-width: 767px) {
@@ -258,20 +312,27 @@ dd {
     }
 
     .copies-hr {
-        margin-right: 40px;
+        margin-right: 10px;
     }
 
     .book_list_book {
-        margin-left: 0;
+        margin-left: 20px;
     }
 
     .book_list_outer {
         margin-left: -30px;
         padding-left: 0;
     }
+
+    .author_list_author {
+        margin-left: 20px;;
+    }
+
+    .author_list_outer {
+        margin-left: -30px;
+        padding-left: 0;
+    }
 } 
-
-
 
 @media only screen and (max-width: 1200px) {
     .intro-p {
@@ -301,6 +362,7 @@ dd {
     .author_detail_book-right {
         padding-right: 40px;
     }
+}
 
 @media only screen and (max-width: 450px) {
     .author_detail_book-right {
