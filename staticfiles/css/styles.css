@@ -132,14 +132,14 @@ dd {
 
 .book_list_outer {
     margin: 30px 0 0 0;
-    padding: 0 0 0 0;
+    padding: 0;
     text-align: center;
     align-content: center;
     align-items: center;
 }
 
 .book_list_book {
-    margin: 0 20px 20px 20px;
+    margin: 0 5px 20px 5px;
     display: inline-block;
     align-content: center;
     text-align: center;
@@ -154,6 +154,7 @@ dd {
 
 .book_list_cover_img {
     height: 200px;
+    max-width: 160px;
 }
 
 .book_list_details {
@@ -199,6 +200,7 @@ dd {
 
 .author_list_image_img {
     height: 200px;
+    max-width: 160px;
 }
 
 .author_list_details {
@@ -301,7 +303,7 @@ dd {
 }
 
 .author-summary {
-    padding: 0 5e0px 0 20px;
+    padding: 0 50px 0 20px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 100;
 }
