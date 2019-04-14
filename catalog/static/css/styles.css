@@ -399,9 +399,10 @@ dd {
     #fp-logo {
         position: absolute;
         width: 100%;
+        top: 0;
         left: 0;
     }
     #fp-intro {
-        padding-top: 280px;
+        padding-top: 220px;
     }
 } 
