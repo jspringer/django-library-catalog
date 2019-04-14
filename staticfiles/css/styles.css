@@ -1,7 +1,6 @@
 body {
-    overflow-y: auto; 
+    overflow-y: auto;
     overflow-x: hidden;
-    max-width: 100%;
 }
 
 .width100 {
@@ -267,7 +266,7 @@ dd {
 }
 
 .book-title {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
 .book-author {
@@ -281,7 +280,7 @@ dd {
 }
 
 .book-summary {
-    padding: 0 70px 0 20px;
+    padding: 0 10px 0 20px;
     margin-bottom: 30px;
     font-weight: 100;
 }
@@ -334,11 +333,11 @@ dd {
 }
 
 .author_detail_book-right {
-    padding-right: 70px;
+    padding-right: 10px;
 }
 
 .author-title {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
 .author-left {
@@ -352,7 +351,7 @@ dd {
 
 .author-pic {
     padding-top: 25px;
-    max-width: 200px;
+    max-width: 225px;
 }
 
 .author-life {
@@ -361,7 +360,7 @@ dd {
 }
 
 .author-summary {
-    padding: 0 50px 0 20px;
+    padding: 0 10px 0 20px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 100;
 }
@@ -416,13 +415,13 @@ dd {
 
 @media only screen and (max-width: 500px) {
     .author_detail_book-right {
-        padding-right: 40px;
+        padding-right: 10px;
     }
 }
 
 @media only screen and (max-width: 450px) {
     .author_detail_book-right {
-        padding-right: 30px;
+        padding-right: 10px;
     }
     #fp-logo {
         position: absolute;
@@ -434,6 +433,9 @@ dd {
         padding-top: 220px;
     }
     .author-summary {
-        padding-right: 30px;
+        padding-right: 10px;
+    }
+    .book-summary {
+        padding-right: 10px;
     }
 } 
