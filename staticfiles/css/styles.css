@@ -151,11 +151,13 @@ dd {
 
 .book_list_cover {
     display: block;
+    height: 200px;
+    background-color: rgb(253, 253, 253);
 }
 
 .book_list_cover_img {
     height: 200px;
-    max-width: 160px;
+    max-width: 155px;
 }
 
 .book_list_details {
@@ -198,11 +200,12 @@ dd {
 .author_list_image {
     display: block;
     height: 200px;
+    background-color: rgb(251, 251, 251);
 }
 
 .author_list_image_img {
     height: 200px;
-    max-width: 160px;
+    max-width: 155px;
 }
 
 .author_list_details {
@@ -322,10 +325,6 @@ dd {
     .book_list_outer {
         margin-left: -20px;
         padding-right: 5px;
-    }
-
-    .book_list_book {
-        width: 160px;
     }
 
     .author_list_outer {
