@@ -321,14 +321,16 @@ dd {
 
     .book_list_outer {
         margin-left: -20px;
-        padding-left: 0;
+        padding-right: 5px;
     }
 
-
+    .book_list_book {
+        width: 160px;
+    }
 
     .author_list_outer {
         margin-left: -20px;
-        padding-left: 0;
+        padding-right: 5px;
     }
 } 
 
