@@ -279,6 +279,10 @@ dd {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.book_detail_outer {
+    margin-left: -20px;
+}
+
 .book-summary {
     padding: 0 10px 0 20px;
     margin-bottom: 30px;
@@ -321,6 +325,10 @@ dd {
     margin-right: 10px;
 }
 
+.author_detail_outer {
+    margin-left: -20px;
+}
+
 .author_detail_book {
     margin-bottom: 30px !important;
     display: inline-block;
@@ -335,6 +343,7 @@ dd {
 .author_detail_book-right {
     padding-right: 10px;
 }
+
 
 .author-title {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -370,10 +379,6 @@ dd {
 }
 
 @media only screen and (max-width: 767px) {
-    .book-left { 
-        padding-right: 50px;
-    }
-
     .copies-hr {
         margin-right: 10px;
     }
