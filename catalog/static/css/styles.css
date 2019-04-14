@@ -138,7 +138,7 @@ dd {
     align-items: center;
 }
 
-.book_list_title {
+.book_list_header {
     margin-bottom: 30px;
 }
 
@@ -190,7 +190,7 @@ dd {
     align-items: center;
 }
 
-.author_list_title {
+.author_list_header {
     margin-bottom: 30px;
 }
 
@@ -331,12 +331,12 @@ dd {
     }
 
     .book_list_outer {
-        margin-left: -20px;
+        margin-left: -25px;
         padding-right: 5px;
     }
 
     .author_list_outer {
-        margin-left: -20px;
+        margin-left: -25px;
         padding-right: 5px;
     }
 } 
