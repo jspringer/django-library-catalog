@@ -60,7 +60,7 @@ body {
 
 .nav-right {
     position: absolute;
-    right: 60px;
+    right: 5px;
     top: 0;
     list-style: none;
 }
@@ -392,6 +392,11 @@ dd {
         margin-left: -25px;
         margin-right: 5px;
     }
+
+    .nav-menu-text {
+        display: none;
+    }
+
 } 
 
 @media only screen and (max-width: 1200px) {

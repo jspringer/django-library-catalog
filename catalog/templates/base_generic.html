@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Roboto|Montserrat|Lato" rel="stylesheet">  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
@@ -20,27 +21,28 @@
   <div class="container-fluid main-mid-container">
 
     <div class="row" id="topnavbar">
+      
       <div class="col-sm-12">
         {% block sidebar %}
-        <div class="width100">
+        <div class="width100 main-navbar">
             <a href="{% url 'index' %}"><img src="{% static "images/bpl_logo_sm.png" %}" alt="Home" class="logo" /></a>
-          <ul class="sidebar-nav">
-            <li><a href="{% url 'books' %}">All Books</a></li>
-            <li><a href="{% url 'authors' %}">All Authors</a></li>
+          <ul class="sidebar-nav nav-left">
+            <li><a href="{% url 'books' %}"><i class="fas fa-book"></i><span class="nav-menu-text"> All Books</span></a></li>
+            <li><a href="{% url 'authors' %}"><i class="fas fa-user-edit"></i><span class="nav-menu-text"> All Authors</span></a></li>
             {% if user.is_authenticated %}
             {% if user.is_staff %}
               {% if perms.catalog.can_mark_returned %}
-              <li><a href="{% url 'all-borrowed' %}">All borrowed</a></li>
+              <li><a href="{% url 'all-borrowed' %}"><i class="far fa-calendar-alt"></i><span class="nav-menu-text"> All borrowed</span></a></li>
               {% endif %}
             {% endif %}
-            <li><a href="{% url 'my-borrowed' %}">My Borrowed</a></li>
+            <li><a href="{% url 'my-borrowed' %}"><i class="fas fa-book-reader"></i><span class="nav-menu-text"> My Borrowed</span></a></li>
             {% endif %}
           </ul>
         
           <ul class="sidebar-nav nav-right">
           {% if user.is_authenticated %}
             {% if user.is_staff %}
-              <a href="../../admin"><li>{{ user.get_username }}</li></a>
+              <li><a href="../../admin">{{ user.get_username }}</a</li>
             {% else %}
               <li>{{ user.get_username }}</li>
             {% endif %}
@@ -49,6 +51,7 @@
             <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>   
           {% endif %} 
           </ul>
+
         </div>
         {% endblock %}
       </div>
