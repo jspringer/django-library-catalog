@@ -27,15 +27,15 @@
         <div class="width100 main-navbar">
             <a href="{% url 'index' %}"><img src="{% static "images/bpl_logo_sm.png" %}" alt="Home" class="logo" /></a>
           <ul class="sidebar-nav nav-left">
-            <li><a href="{% url 'books' %}"><i class="fas fa-book"></i><span class="nav-menu-text"> All Books</span></a></li>
-            <li><a href="{% url 'authors' %}"><i class="fas fa-user-edit"></i><span class="nav-menu-text"> All Authors</span></a></li>
+            <li class="nav-left-li"><a href="{% url 'books' %}"><i class="fas fa-book nav-icon"></i><span class="nav-menu-text"> All Books</span></a></li>
+            <li class="nav-left-li"><a href="{% url 'authors' %}"><i class="fas fa-user-edit nav-icon"></i><span class="nav-menu-text"> All Authors</span></a></li>
             {% if user.is_authenticated %}
             {% if user.is_staff %}
               {% if perms.catalog.can_mark_returned %}
-              <li><a href="{% url 'all-borrowed' %}"><i class="far fa-calendar-alt"></i><span class="nav-menu-text"> All borrowed</span></a></li>
+              <li class="nav-left-li"><a href="{% url 'all-borrowed' %}"><i class="far fa-calendar-alt nav-icon"></i><span class="nav-menu-text"> All borrowed</span></a></li>
               {% endif %}
             {% endif %}
-            <li><a href="{% url 'my-borrowed' %}"><i class="fas fa-book-reader"></i><span class="nav-menu-text"> My Borrowed</span></a></li>
+            <li class="nav-left-li"><a href="{% url 'my-borrowed' %}"><i class="fas fa-book-reader nav-icon"></i><span class="nav-menu-text"> My Borrowed</span></a></li>
             {% endif %}
           </ul>
         
