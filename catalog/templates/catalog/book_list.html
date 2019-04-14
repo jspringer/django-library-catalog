@@ -1,9 +1,9 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+<div class="book_list_outer">
   <h1 class="text-center">Books</h1>
   
-  <div class="book_list_outer">
   {% if book_list %}
     {% for book in book_list %}
     <div class="book_list_book">
@@ -20,5 +20,5 @@
   {% else %}
     <p>There are no books in the library.</p>
   {% endif %} 
-  </div>    
+</div>    
 {% endblock %}
