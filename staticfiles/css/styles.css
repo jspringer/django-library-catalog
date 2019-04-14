@@ -328,7 +328,25 @@ dd {
 }
 
 .author_detail_book-right {
-    padding-right: 80px;
+    padding-right: 70px;
+}
+
+.author-title {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+.author-left {
+    text-align: center;
+ }
+ 
+ .author-right {
+     font-family: Helvetica, Arial, sans-serif;
+     padding-bottom: 50px;
+  }
+
+.author-pic {
+    padding-top: 25px;
+    max-width: 200px;
 }
 
 .author-life {
@@ -340,6 +358,10 @@ dd {
     padding: 0 50px 0 20px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 100;
+}
+
+.author_books {
+    margin: 25px 0 0 20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -404,5 +426,8 @@ dd {
     }
     #fp-intro {
         padding-top: 220px;
+    }
+    .author-summary {
+        padding-right: 30px;
     }
 } 
