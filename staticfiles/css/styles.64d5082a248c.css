@@ -1,0 +1,524 @@
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+a {
+    color: rgb(0, 97, 207);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(39, 133, 240);
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.width100 {
+    width: 100% !important;
+}
+
+.fweight500 {
+    font-weight: 500;
+}
+
+.main-navbar {
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
+
+.main-outer {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.main-mid-container {
+    padding-bottom: 90px;
+}
+
+.main-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #313131;
+    text-align: center;
+}
+
+.main-footer a {
+    color: #fafafa !important;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    color: #dadada !important;
+    text-decoration: none;
+}
+
+#fp-logo-div {
+    float: left;
+}
+
+#fp-logo {
+    width: 340px;
+    margin: 25px 20px 20px 0;
+}
+
+#fp-intro {
+
+}
+
+#fp-main {
+    display: inline-block;
+}
+
+.weight900 {
+    font-weight: 900;
+}
+
+.sidebar-nav {
+    margin-top: 10px;
+    height: 100%;
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.nav-right {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    text-align: right;
+    list-style: none;
+}
+
+.nav-left {
+    margin-left: 3px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+}
+
+#topnavbar {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(250, 250, 250); 
+    border: 0;
+}
+
+.logo {
+    padding: 10px 10px 8px 0 !important;
+    width: 100px !important;
+    display: inline-block;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+li a {
+    margin: 0;
+}
+
+.right-container {
+    padding: 60px 0 0 30px;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-weight: 100;
+}
+
+.sidebar-nav li {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+    font-weight: 500;
+}
+
+.intro-p {
+    padding: 0 20px 0 20px;
+    max-width: 1000px;
+}
+
+.stats {
+    padding: 0 0 0 20px;
+}
+
+strong {
+    font-weight: 900 !important;
+}
+
+dt {
+    margin-bottom: 5px;
+    font-size: 2.2rem;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+dd {
+    margin-bottom: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+/* ****************** Books ****************** */
+
+.book-left {
+   text-align: center;
+}
+
+.book-right {
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 50px;
+ }
+
+.book_list_outer {
+    margin-left: -20px;
+    margin-right: 20px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.book_list_header {
+    margin-bottom: 30px;
+}
+
+.book_list_book {
+    margin: 0 5px 20px 5px;
+    padding: 0;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    width: 160px;
+    height: 300px;
+    vertical-align: top;
+}
+
+.book_list_cover {
+    display: block;
+    height: 200px;
+    background-color: rgb(253, 253, 253);
+}
+
+.book_list_cover_img {
+    height: 200px;
+    max-width: 155px;
+}
+
+.book_list_details {
+    margin-top: 10px;
+    vertical-align: bottom;
+}
+
+.book_list_title {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 1.7rem;
+    font-family: Helvetica, Arial, "Helvetica Neue", sans-serif
+}
+
+.book_list_author {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.author_list_outer {
+    margin-left: -20px;
+    margin-right: 20px;
+    padding: 0;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.author_list_header {
+    margin-bottom: 30px;
+}
+
+.author_list_author {
+    margin: 0 5px 20px 5px;
+    padding: 0;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    width: 160px;
+    height: 300px;
+    vertical-align: top;
+}
+
+.author_list_image {
+    display: block;
+    height: 200px;
+    background-color: rgb(251, 251, 251);
+}
+
+.author_list_image_img {
+    height: 200px;
+    max-width: 155px;
+}
+
+.author_list_details {
+    margin-top: 10px;
+}
+
+.author_list_name {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 1.7rem;
+    font-family: Helvetica, Arial, "Helvetica Neue". sans-serif
+}
+
+.author_list_life {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+
+.book-cover {
+    padding-top: 25px;
+    max-width: 200px;
+}
+
+.book-title {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.book-author {
+
+}
+
+.book-details-main {
+  padding-left: 15px;
+  margin-bottom: 30px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.book_detail_outer {
+    margin-left: -20px;
+}
+
+.book-summary {
+    padding: 0 10px 0 20px;
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+
+.book-isbn {
+
+}
+
+.book-lang {
+    
+}
+
+.book-genre {
+    
+}
+
+.book-copies {
+    padding: 0 15px 0 15px;
+}
+
+.book-copies-title {
+    
+}
+
+.book-imprint {
+
+}
+
+.book-visitlib, .book-reserved, .book-maintanence {
+     font-weight: 100;
+}
+
+.book-returned {
+    
+}
+
+.copies-hr {
+    margin-right: 10px;
+}
+
+.author_detail_outer {
+    margin-left: -20px;
+}
+
+.author_detail_book {
+    margin-bottom: 30px !important;
+    display: inline-block;
+}
+
+.author_detail_book-left {
+    width: 150px;
+    float: left;
+    margin: 0 20px 15px 0;
+}
+
+.author_detail_book-right {
+    padding-right: 10px;
+}
+
+
+.author-title {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.author-left {
+    text-align: center;
+ }
+ 
+ .author-right {
+     font-family: Helvetica, Arial, sans-serif;
+     padding-bottom: 50px;
+  }
+
+.author-pic {
+    padding-top: 25px;
+    max-width: 225px;
+}
+
+.author-life {
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+.author-summary {
+    padding: 0 10px 0 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+.author_books {
+    margin: 25px 0 0 20px;
+}
+
+.logout-icon {
+    display: none;
+}
+
+.login-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .copies-hr {
+        margin-right: 10px;
+    }
+
+    .book_list_outer {
+        margin-left: -25px;
+        margin-right: 5px;
+    }
+
+    .author_list_outer {
+        margin-left: -25px;
+        margin-right: 5px;
+    }
+
+    .nav-menu-text {
+        display: none;
+    }
+
+    .nav-icon {
+        font-size: 1.8rem;
+        vertical-align: middle;
+        padding-bottom: 1px;
+    }
+
+    .logout-text {
+        display: none;
+    }
+    
+    .login-text {
+        display: none;
+    }
+
+    .logout-icon {
+        display: initial;
+        font-size: 2rem;
+        position: absolute;
+        right: 10px;
+        top: 1px;
+    }
+    
+    .login-icon {
+        display: initial;
+        font-size: 2rem;
+        position: absolute;
+        right: 10px;
+        top: 1px;
+    }
+} 
+
+@media only screen and (max-width: 1200px) {
+    .intro-p {
+        width: 1000px;
+    }
+} 
+
+@media only screen and (max-width: 1000px) {
+    .intro-p {
+        width: 750px;
+    }
+} 
+
+@media only screen and (max-width: 800px) {
+    .intro-p {
+        width: 500px;
+    }
+} 
+
+@media only screen and (max-width: 620px) {
+    .intro-p {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .author_detail_book-right {
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .author_detail_book-right {
+        padding-right: 10px;
+    }
+    #fp-logo {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    #fp-intro {
+        padding-top: 220px;
+    }
+    .author-summary {
+        padding-right: 10px;
+    }
+    .book-summary {
+        padding-right: 10px;
+    }
+} 
