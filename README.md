@@ -1,8 +1,8 @@
 # Django Local Library
 
-## Overview
-
 Mock online library catalog access platform that allows the end user to see books the library carries and their availability. The end user cannot check out books online. 
+
+[Demo](http://jsnspr-django-library.herokuapp.com/) - Admin login: ``admin`` password: ``Qaz2Wsx#Edc``
 
 A superuser/admin can access the Admin platform to add new authors and books. 
 
