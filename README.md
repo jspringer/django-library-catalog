@@ -15,6 +15,7 @@ The main features that have currently been implemented are:
 
 ## Fixes/Features being worked on: 
 1. Improve the UI for all devices. 
+2. Fix 500 error when accessing "All Borrowed" (/catalog/borrowed/). Works locally but not on Heroku, related to static files, see [Heroku doc](https://devcenter.heroku.com/articles/django-assets).
 
 ## Quick Start
 
