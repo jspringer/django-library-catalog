@@ -9,10 +9,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
-
-
-# Extra places for collectstatic to find static files.
-
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -148,7 +144,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # The URL to use when referring to static files (where they will be served from)
 STATIC_URL = '/static/'
 
+
 # Static file serving.
 # http://whitenoise.evans.io/en/stable/django.html#django-middleware
 # Line below causing 500 error, commented out and works
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
