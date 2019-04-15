@@ -46,9 +46,9 @@
             {% else %}
               <li>{{ user.get_username }}</li>
             {% endif %}
-            <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>   
+            <li><a href="{% url 'logout'%}?next={{request.path}}"><i class="fas fa-sign-out-alt logout-icon"></i><span class="logout-text">Logout</span></a></li>   
           {% else %}
-            <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>   
+            <li><a href="{% url 'login'%}?next={{request.path}}"><i class="fas fa-sign-in-alt login-icon"></i><span class="logout-text">Login</span></a></li>   
           {% endif %} 
           </ul>
 

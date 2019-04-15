@@ -391,6 +391,14 @@ dd {
     margin: 25px 0 0 20px;
 }
 
+.logout-icon {
+    display: none;
+}
+
+.login-icon {
+    display: none;
+}
+
 @media only screen and (max-width: 767px) {
     .copies-hr {
         margin-right: 10px;
@@ -416,6 +424,29 @@ dd {
         padding-bottom: 1px;
     }
 
+    .logout-text {
+        display: none;
+    }
+    
+    .login-text {
+        display: none;
+    }
+
+    .logout-icon {
+        display: initial;
+        font-size: 2rem;
+        position: absolute;
+        right: 10px;
+        top: 1px;
+    }
+    
+    .login-icon {
+        display: initial;
+        font-size: 2rem;
+        position: absolute;
+        right: 10px;
+        top: 1px;
+    }
 } 
 
 @media only screen and (max-width: 1200px) {
