@@ -2,17 +2,40 @@
 {% load static %}
 
 {% block content %}
-<div id="fp-main">
-  <div id="fp-logo-div">
-    <img src="{% static "images/bklynpl_outdoors-900x570.jpg" %}" id="fp-logo">
-  </div>
-  <div id="fp-intro">
-    <h1>Welcome</h1>
-    <p class="intro-p">The Brooklyn Public Library (BPL) is the public library system of the borough of Brooklyn, in New York City. 
-      It is the fifth largest public library system in the United States. 
-      Like the two other public library systems in New York City, it is an independent nonprofit organization that is funded by the New York City and State governments, the federal government, and private donors. 
-      In Fiscal Year 2009, Brooklyn Public Library had the highest program attendance of any public library system in the United States.
-      The library currently promotes itself as Bklyn Public Library.</p>
+
+<div class="container index-container">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="{% static "images/bklynpl_outdoors-900x570.jpg" %}" id="fp-logo">
+    </div>
+    <div class="col-sm-8"">
+      <div id="fp-intro">
+        <h1>Brooklyn Public Library Catalog</h1>
+        <p class="">
+          The Brooklyn Public Library (BPL) is the public library system of the borough of Brooklyn, 
+          in New York City. 
+          It is the fifth largest public library system in the United States. 
+          Like the two other public library systems in New York City, 
+          it is an independent nonprofit organization that is funded by the New York City and State governments, 
+          the federal government, and private donors. 
+          In Fiscal Year 2009, 
+          Brooklyn Public Library had the highest program attendance of any public library system in the United States.
+          The library currently promotes itself as Bklyn Public Library.</p>
+      </div>
+
+      <h2>Stats</h2>
+      <div class="stats">
+        <p>The library has the following record counts:</p>
+        <ul>
+        <li><strong>Books:</strong> {{ num_books }}</li>
+        <li><strong>Copies:</strong> {{ num_instances }}</li>
+        <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+        <li><strong>Authors:</strong> {{ num_authors }}</li>
+        </ul>
+
+        <p id="indexpgviews">You have visited this page {{ num_visits }} times.</p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -20,20 +43,5 @@
 {% load static %}
 <img src="{% static "images/__________.png" %}" alt="My image" style="width:555px;height:540px;"/>
 </div -->  
-
-
-<h2>Stats</h2>
-
-<div class="stats">
-  <p>The library has the following record counts:</p>
-  <ul>
-  <li><strong>Books:</strong> {{ num_books }}</li>
-  <li><strong>Copies:</strong> {{ num_instances }}</li>
-  <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
-  <li><strong>Authors:</strong> {{ num_authors }}</li>
-  </ul>
-
-  <p id="indexpgviews">You have visited this page {{ num_visits }} times.</p>
-</div>
 
 {% endblock %}

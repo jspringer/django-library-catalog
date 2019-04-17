@@ -66,8 +66,10 @@ a:visited {
 }
 
 #fp-logo {
-    width: 340px;
-    margin: 25px 20px 20px 0;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-right: 0;
 }
 
 #fp-intro {
@@ -178,6 +180,10 @@ dd {
     margin-bottom: 10px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 100;
+}
+
+.index-container {
+    padding: 0 25px 0 10px !important;
 }
 
 /* ****************** Books ****************** */
