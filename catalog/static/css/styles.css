@@ -61,19 +61,13 @@ a:visited {
     text-decoration: none;
 }
 
-/* #fp-logo-div {
+#fp-logo-div {
     float: left;
-} */
-
-.fp-logo-container {
-    text-align: center;
 }
 
 #fp-logo {
-    width: 100%;
-    max-width: 400px;
-    margin-top: 20px;
-    margin-right: 0;
+    width: 340px;
+    margin: 25px 20px 20px 0;
 }
 
 #fp-intro {
@@ -184,10 +178,6 @@ dd {
     margin-bottom: 10px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 100;
-}
-
-.index-container {
-    padding: 0 25px 0 10px !important;
 }
 
 /* ****************** Books ****************** */
@@ -523,16 +513,12 @@ dd {
         left: 0;
     }
     #fp-intro {
-        padding-top: 250px;
+        padding-top: 220px;
     }
     .author-summary {
         padding-right: 10px;
     }
     .book-summary {
         padding-right: 10px;
-    }
-
-    .index-container {
-        padding: 0 25px 0 0 !important;
     }
 } 
