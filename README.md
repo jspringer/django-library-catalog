@@ -2,9 +2,9 @@
 
 Mock online library catalog access platform that allows the end user to see books the library carries and their availability. The end user cannot check out books online. 
 
-[Demo](http://jsnspr-django-library.herokuapp.com/) - Admin login: ``admin`` password: ``Qaz2Wsx#Edc``
+[Demo](http://jsnspr-django-library.herokuapp.com/)
 
-A superuser/admin can access the Admin platform to add new authors and books. 
+A superuser/admin can access the [Admin platform](https://jsnspr-django-library.herokuapp.com/admin/) (/admin) to add new authors and books. Login: ``admin`` password: ``Qaz2Wsx#Edc``
 
 The main features that have currently been implemented are:
 
