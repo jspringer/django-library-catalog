@@ -13,6 +13,9 @@ The main features that have currently been implemented are:
 * Admin users can create and manage models. The admin has been optimised (the basic registration is present in admin.py, but commented out).
 * Librarians can renew reserved books.
 
+![Local Library Model](https://raw.githubusercontent.com/jspringer/django-locallibrary/master/catalog/static/images/local_library_model_uml.png)
+
+
 ## Fixes/Features being worked on: 
 1. Improve the UI for all devices. 
 2. Fix 500 error when accessing "All Borrowed" (/catalog/borrowed/). Works locally but not on Heroku, related to static files, see [Heroku doc](https://devcenter.heroku.com/articles/django-assets).
